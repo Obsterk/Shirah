@@ -1460,10 +1460,16 @@ h2 {
   .family-card__body,
   .always-remember__verse,
   .next-year__sub,
-  .mixtape-header p {
-    font-size: 0.9rem;
+  .mixtape-header p,
+  .goals-list__text,
+  .track-card__title,
+  .track-card__note,
+  .family-card__opening,
+  .family-card__closing {
+    font-size: 0.88rem;
     line-height: 1.7;
     letter-spacing: 0;
+    font-weight: 400;
   }
 
   .polaroids--scroll .polaroid {
@@ -1473,14 +1479,18 @@ h2 {
 
   .track-card {
     min-height: 120px;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .track-card__title {
     font-size: 0.86rem;
+    line-height: 1.4;
   }
 
   .track-card__note {
     font-size: 0.74rem;
+    line-height: 1.5;
   }
 
   .site-footer {
