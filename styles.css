@@ -31,12 +31,15 @@ html {
 
 body {
   margin: 0;
-  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", var(--font-sans);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 400;
   color: var(--text);
   background: var(--cream);
   line-height: 1.6;
+  letter-spacing: 0;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 img {
@@ -1403,6 +1406,17 @@ h2 {
 }
 
 @media (max-width: 480px) {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    font-size: 14px;
+    line-height: 1.65;
+    letter-spacing: 0;
+  }
+
   .masonry {
     column-count: 1;
   }
