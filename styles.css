@@ -1268,10 +1268,19 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  main {
+    padding-bottom: 5.5rem;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
     padding-top: 3rem;
+    gap: 2rem;
   }
 
   .hero__corner {
@@ -1280,9 +1289,23 @@ h2 {
     margin-bottom: 0.5rem;
   }
 
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .hero__desc {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .hero__visual {
+    width: 100%;
+  }
+
+  .arch-frame {
+    width: min(100%, 280px);
   }
 
   .reasons__grid,
@@ -1290,12 +1313,25 @@ h2 {
     grid-template-columns: 1fr;
   }
 
+  .panel__head,
+  .mosaic-head,
+  .mixtape-header,
+  .search-section {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .panel__head,
+  .mosaic-head {
+    gap: 0.75rem;
+  }
+
   .masonry {
     column-count: 2;
   }
 
   .search-section {
-    grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 
   .voucher {
@@ -1314,10 +1350,6 @@ h2 {
     margin-top: 0;
   }
 
-  .mixtape-header {
-    grid-template-columns: 1fr;
-  }
-
   .age-badge {
     right: 1rem;
     bottom: 0;
@@ -1326,10 +1358,74 @@ h2 {
   .family-cards {
     grid-template-columns: 1fr;
   }
+
+  .letter-section__inner,
+  .family-card,
+  .always-remember__verse,
+  .track-card {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .music-player {
+    left: 0.75rem;
+    right: 0.75rem;
+    bottom: 0.75rem;
+    max-width: none;
+    width: auto;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .music-player__toggle {
+    flex: 0 0 auto;
+  }
+
+  .music-player__meta {
+    flex: 1 1 120px;
+    min-width: 0;
+  }
+
+  .music-player__track {
+    max-width: 100%;
+  }
+
+  .now-playing-top {
+    left: 0.75rem;
+    right: 0.75rem;
+    width: auto;
+    max-width: calc(100vw - 1.5rem);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 480px) {
   .masonry {
     column-count: 1;
+  }
+
+  .hero {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .section-tag {
+    letter-spacing: 0.1em;
+  }
+
+  .track-card {
+    min-height: 120px;
+  }
+
+  .music-player__skip-label,
+  .music-player__toggle-label {
+    letter-spacing: 0.08em;
+  }
+
+  .site-footer {
+    padding-bottom: 6rem;
   }
 }
