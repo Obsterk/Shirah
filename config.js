@@ -11,7 +11,7 @@ window.BIRTHDAY_CONFIG = {
   hero: {
     title: "Happy Birthday Shirah!",
     subtitle: "my digital letter to you",
-    image: "",
+    image: "assets/images/dump-7.jpeg",
     imageCaption: "twenty-one & glowing",
     ctaText: "read my letter",
     cornerNote: "FOR SHIRAH",
