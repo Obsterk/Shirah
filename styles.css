@@ -1412,12 +1412,53 @@ h2 {
     padding-right: 1rem;
   }
 
+  .hero__title-bold {
+    font-size: clamp(2rem, 8.6vw, 2.7rem);
+    line-height: 1.08;
+  }
+
+  .hero__subtitle-lowercase {
+    letter-spacing: 0.03em;
+    font-size: 0.84rem;
+  }
+
+  .cursive-title {
+    font-size: clamp(2rem, 8.6vw, 2.7rem);
+    line-height: 1.08;
+  }
+
   .section-tag {
     letter-spacing: 0.1em;
   }
 
+  .letter-greeting {
+    font-size: 1.08rem;
+  }
+
+  .letter-body,
+  .family-card__body,
+  .always-remember__verse,
+  .next-year__sub,
+  .mixtape-header p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .polaroids--scroll .polaroid {
+    width: 170px;
+    max-width: 72vw;
+  }
+
   .track-card {
     min-height: 120px;
+  }
+
+  .track-card__title {
+    font-size: 0.86rem;
+  }
+
+  .track-card__note {
+    font-size: 0.74rem;
   }
 
   .music-player__skip-label,
