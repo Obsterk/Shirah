@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Shirah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="now-playing-top" id="now-playing-top" hidden>
+      <span class="label">NOW PLAYING —</span>
+      <span id="now-playing-top-text"></span>
+    </div>
+
+    <main id="app"></main>
+
+    <div class="music-player" id="music-player" hidden>
+      <button type="button" class="music-player__toggle" id="music-toggle" aria-label="Play or pause">
+        <span class="music-player__disc" id="music-disc"></span>
+        <span class="music-player__toggle-label" id="music-toggle-label">PLAY</span>
+      </button>
+      <button type="button" class="music-player__skip" id="music-skip" aria-label="Skip to next track">
+        <span class="music-player__skip-label">SKIP</span>
+      </button>
+      <div class="music-player__meta">
+        <span class="music-player__label">Now playing</span>
+        <span class="music-player__track" id="music-track-label"></span>
+      </div>
+    </div>
+
+    <audio id="page-audio" preload="metadata"></audio>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
