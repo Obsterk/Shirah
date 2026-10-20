@@ -1415,20 +1415,27 @@ h2 {
   .hero__title-bold {
     font-size: clamp(2rem, 8.6vw, 2.7rem);
     line-height: 1.08;
+    letter-spacing: -0.02em;
   }
 
   .hero__subtitle-lowercase {
-    letter-spacing: 0.03em;
+    letter-spacing: 0;
     font-size: 0.84rem;
   }
 
   .cursive-title {
     font-size: clamp(2rem, 8.6vw, 2.7rem);
     line-height: 1.08;
+    letter-spacing: -0.01em;
   }
 
-  .section-tag {
-    letter-spacing: 0.1em;
+  .section-tag,
+  .corner-note,
+  .family-card__label,
+  .music-player__skip-label,
+  .music-player__toggle-label,
+  .search-results .status {
+    letter-spacing: 0;
   }
 
   .letter-greeting {
@@ -1442,6 +1449,7 @@ h2 {
   .mixtape-header p {
     font-size: 0.9rem;
     line-height: 1.7;
+    letter-spacing: 0;
   }
 
   .polaroids--scroll .polaroid {
@@ -1459,11 +1467,6 @@ h2 {
 
   .track-card__note {
     font-size: 0.74rem;
-  }
-
-  .music-player__skip-label,
-  .music-player__toggle-label {
-    letter-spacing: 0.08em;
   }
 
   .site-footer {
